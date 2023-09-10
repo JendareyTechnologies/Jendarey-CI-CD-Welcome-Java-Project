@@ -1,5 +1,5 @@
 # Jendarey-CI-CD-Welcome-Java-Project
-#Welcome to the CI/CD Training for mutiple Spring Boot web application!!!
+#Welcome to the CI/CD Training for multiple Spring Boot web applications!!!
 
 - Our Applications Will be Deployed To Web Application - Tomcat
 
