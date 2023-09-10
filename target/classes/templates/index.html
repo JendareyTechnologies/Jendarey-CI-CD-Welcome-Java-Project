@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <style>
+        /* CSS to make the title text red */
+        title {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link data-th-href="@{/css/main.css?{id}(id=${timestamp})}" rel="stylesheet">
+    <title>This is a CI-CD-Welcome-Message For a SpringBoot Static Web Application</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Jendarey Technologies CICD Training Welcome Message</a>
+</nav>
+
+<main role="main" class="container">
+    <div class="starter-template">
+        <h1 th:text="${title}" style="color: red;">Default title.</h1>
+        <h3 th:text="${msg}" style="color: blue;">Default text.</h3>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; font-weight: bold;">
+        <h2 style="color: red;">Here, you'll acquire knowledge and skills in the following areas:</h2>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li style="color: blue; font-size: 20px;">Implementing Free Style and Pipeline Projects using Jenkins</li>
+            <li style="color: blue; font-size: 20px;">Creating Software Packages (Jar, War, and Ear) with Maven</li>
+            <li style="color: blue; font-size: 20px;">Conducting Code Analysis using SonarQube</li>
+            <li style="color: blue; font-size: 20px;">Uploading Artifacts to the Sonar Nexus Repository</li>
+            <li style="color: blue; font-size: 20px;">Deploying Jar, War, and Ear Packages on Tomcat</li>
+            <li style="color: blue; font-size: 20px;">Setting up Load Balancing for at least three Application Servers, including Tomcat with Nginx</li>
+            <li style="color: blue; font-size: 20px;">Implementing Monitoring using Slack</li>
+        </ul>
+        <p style="color: red; font-size: 24px; margin-top: 20px;">Get ready to explore and master these aspects of software development and deployment.</p>
+    </div>
+    
+</main>
+
+<script data-th-src="@{/js/main.js}"></script>
+</body>
+</html>
