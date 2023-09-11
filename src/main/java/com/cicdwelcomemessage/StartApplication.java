@@ -13,7 +13,7 @@ public class StartApplication {
     @GetMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "Welcome to the CI/CD Training for multiple Spring Boot web applications!!!");
-        model.addAttribute("msg", "Our Applications will be Deployed to the multiple Web Application Servers - Tomcat.");
+        model.addAttribute("msg", "Our Applications will be Deployed to multiple Web Application Servers - Tomcat.");
         return "index";
     }
 
